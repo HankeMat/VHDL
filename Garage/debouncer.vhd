@@ -1,10 +1,10 @@
 ------------------------------------------------------
--- Company:             SPŠE Havírov
+-- Company:             SPÅ E HavÃ­rov
 -- Engineer:            Matej Hanke
 -- 
 -- Create Date:         08:51:30 01/25/2023 
 -- Module Name:         debouncer - Behavioral 
--- Project Name:        Had
+-- Project Name:        Garage
 -- Target Devices:      xc3s250e-5cp132
 -- Tool versions:       Xilinx ISE
 --

@@ -43,7 +43,7 @@ ARCHITECTURE behavior OF garagetest IS
  	 clk 		: IN   std_logic;
 	 ce          	: IN   std_logic;
 	 segment 	: OUT  std_logic_vector(6 downto 0);
-         semaphore 	: OUT  std_logic_vector(1 downto 0);
+         semaphore 	: OUT  std_logic_vector(1 downto 0)
         );
     END COMPONENT;
     

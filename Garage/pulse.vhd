@@ -1,14 +1,14 @@
 ------------------------------------------------------
--- Company:             SPE Havrov
+-- Company:             SPŠE Havírov
 -- Engineer:            Matej Hanke
 -- 
 -- Create Date:         08:51:30 01/25/2023 
--- Module Name:         shift_register - Behavioral 
--- Project Name:        Had
+-- Module Name:         pulse - Behavioral 
+-- Project Name:        Garage
 -- Target Devices:      xc3s250e-5cp132
 -- Tool versions:       Xilinx ISE
 --
--- Description:         Clk
+-- Description:         Makes button sensing cleaner
 ------------------------------------------------------
 
 -- Adding libraries

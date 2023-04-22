@@ -36,7 +36,7 @@ entity top is
            btn2 : in   STD_LOGIC;
            leds : out  STD_LOGIC_VECTOR (1 downto 0);
            seg  : out  STD_LOGIC_VECTOR (6 downto 0);
-			  an : out STD_LOGIC_VECTOR (3 downto 0));
+	   an : out STD_LOGIC_VECTOR (3 downto 0));
 end top;
 
 architecture Behavioral of top is
@@ -49,37 +49,37 @@ begin
 an <= "1110";
 
 GAR: entity work.garage PORT MAP(
-		btnIN			=> btnINdeb,
-		btnOUT 		=> btnOUTdeb,
-		btnReset 	=> btnResetdeb,
-		clk			=> mclk,
-		ce				=> clken,
-		segment 		=> seg,
-		semaphore 	=> leds
+	btnIN		=> btnINdeb,
+	btnOUT 		=> btnOUTdeb,
+	btnReset 	=> btnResetdeb,
+	clk		=> mclk,
+	ce		=> clken,
+	segment 	=> seg,
+	semaphore 	=> leds
 );
 
 PULS: entity work.pulse PORT MAP(
-		clk   		=> mclk,
-      pulse 		=> clken
+	clk   		=> mclk,
+	pulse 		=> clken
 );
 
 DEBIN: entity work.debouncer PORT MAP(
-		clk 			=> mclk,
-      ce  			=> clken,
-      btn_in      =>	btn0,
-      btn_posedge =>	btnINdeb
+	clk 		=> mclk,
+	ce  		=> clken,
+	btn_in      	=> btn0,
+	btn_posedge 	=> btnINdeb
 );
 DEBOUT: entity work.debouncer PORT MAP(
-		clk 			=> mclk,
-      ce  			=> clken,
-      btn_in      =>	btn1,
-      btn_posedge =>	btnOUTdeb
+	clk 		=> mclk,
+      	ce  		=> clken,
+      	btn_in      	=> btn1,
+      	btn_posedge 	=> btnOUTdeb
 );
 DEBRESET: entity work.debouncer PORT MAP(
-		clk 			=> mclk,
-      ce  			=> clken,
-      btn_in      =>	btn2,
-      btn_posedge =>	btnResetdeb
+	clk 		=> mclk,
+      	ce  	 	=> clken,
+      	btn_in      	=> btn2,
+      	btn_posedge 	=> btnResetdeb
 );
 
 end Behavioral;
